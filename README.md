@@ -1,73 +1,38 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+# Desenvolvi uma aplicação de gerenciamento de livros utilizando as tecnologias NestJS e Prisma. Este sistema permite que os usuários realizem operações CRUD em uma lista de livros, tornando a gestão de informações de livros eficiente e organizada.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+Funcionalidades Principais:
 
-## Description
+Listagem de Livros:
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Os usuários podem visualizar uma lista completa de todos os livros cadastrados no sistema.
+Cada livro é exibido com informações como título, descrição e código de barras.
+Cadastro de Livros:
 
-## Installation
+É possível adicionar novos livros à lista, fornecendo informações como título, descrição e código de barras.
+A aplicação verifica se um livro com o mesmo código de barras já existe para evitar duplicatas.
+Atualização de Livros:
 
-```bash
-$ npm install
-```
+Os usuários têm a capacidade de atualizar informações de livros existentes, como título e descrição.
+A atualização é feita com base no código de barras único de cada livro.
+Exclusão de Livros:
 
-## Running the app
+Os livros podem ser removidos da lista, proporcionando uma opção de exclusão para cada registro.
+A exclusão é segura e requer confirmação para evitar remoções acidentais.
+Tecnologias Utilizadas:
 
-```bash
-# development
-$ npm run start
+NestJS: Este framework TypeScript é usado para criar a API RESTful que alimenta a aplicação de gerenciamento de livros. Ele fornece uma arquitetura modular, injeção de dependência e uma estrutura organizada para desenvolver o backend.
 
-# watch mode
-$ npm run start:dev
+Prisma: O Prisma é uma ORM (Object-Relational Mapping) moderna que simplifica o acesso ao banco de dados. Ele é usado para definir os modelos de dados, criar migrações e realizar operações CRUD no banco de dados.
 
-# production mode
-$ npm run start:prod
-```
+Benefícios:
 
-## Test
+O uso do NestJS facilita a criação de rotas RESTful e a organização de controladores para manipular operações CRUD.
 
-```bash
-# unit tests
-$ npm run test
+O Prisma simplifica o acesso ao banco de dados, permitindo que os desenvolvedores interajam com o banco de dados usando código TypeScript, em vez de escrever SQL manualmente.
 
-# e2e tests
-$ npm run test:e2e
+O CRUD em forma de listagem de livros melhora a eficiência na gestão de bibliotecas, permitindo que os usuários organizem e atualizem facilmente informações sobre os livros disponíveis.
 
-# test coverage
-$ npm run test:cov
-```
+Conclusão:
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+Com o NestJS e o Prisma, construí uma aplicação de gerenciamento de livros que oferece uma interface de usuário eficiente para listar, adicionar, atualizar e excluir livros. Essa solução simplifica a administração de uma biblioteca de livros, tornando-a mais organizada e fácil de gerenciar.
